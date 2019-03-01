@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".makeItemAct">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/frag_main1"
+                    android:layout_width="350sp"
+                    android:layout_height="match_parent"
+                    tools:layout="@layout/fragment_text"
+                    android:name="com.example.recipeasy.textFragment"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/fav"-->
+            <!--android:layout_width="50sp"-->
+            <!--android:layout_height="50sp"-->
+            <!--android:layout_gravity="top|center"-->
+            <!--android:layout_marginBottom="20sp"-->
+            <!--android:background="@drawable/unclickedstar"-->
+            <!--android:onClick="likebtn" />-->
+
+                <fragment
+                    android:id="@+id/frag_main2"
+                    android:layout_width="150sp"
+                    android:layout_height="wrap_content"
+                    tools:layout="@layout/fragment_image"
+                    android:name="com.example.recipeasy.ImageFragment"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"/>
+    <!--</LinearLayout>-->
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:onClick="exit"
+                    android:text="Exit"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="5sp"/>
+
+
+
+        <!--</LinearLayout>-->
+
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
